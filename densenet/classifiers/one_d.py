@@ -264,5 +264,4 @@ class DenseNetCustom(keras.models.Model):
             initial_pool_stride,
             use_global_pooling=True)(model_input)
         output = Dense(num_outputs, activation="softmax")(output)
-        super(DenseNet264, self).__init__(model_input, output)
-
+        super(DenseNetCustom, self).__init__(model_input, output)
